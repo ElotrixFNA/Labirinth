@@ -1,0 +1,547 @@
+@font-face {
+    font-family: 'Futura';
+    src: url(../font/FuturaTSNewExtraLight.otf);
+}
+
+@font-face {
+    font-family: 'lemon';
+    src: url(../font/DK\ Lemon\ Yellow\ Sun.otf);
+}
+
+@font-face {
+    font-family: 'Perisphere';
+    src: url(../font/Perisphere.otf);
+}
+
+a, a:visited{
+    text-decoration: none;
+}
+body {
+    background-image: url("../bilder/hintergrund.png");
+    /*Bild wiederholt sich nicht*/
+    background-repeat: no-repeat;
+    /*und soll die ganze breite einnehmen*/
+    background-size: 100%;
+    margin: 0px
+}
+
+/*Automatische Einteilung der Width*/
+nav{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    /*Die Items sollen nach der Mitte ausgerichtet werden*/
+    align-items: center;
+    /*Alle Items sollen den Selben Abstand haben um 100% der breite auszunutzen*/
+    justify-content: space-around;
+}
+
+.aktiv{
+    position: relative;
+    text-decoration: none;
+    font-family: 'Perisphere';
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    letter-spacing: 2px;
+    z-index: 100;
+    padding: 0 10px;
+}
+
+.aktiv:after {
+    /*damit nichts aufscheint und es somit unterstreicht*/
+    content: "";
+    position: absolute;
+    /*Farbe*/
+    background-color: white;
+    /*Höhe der Linie*/
+    height: 1px;
+    width: 0;
+    left: 0;
+    /*distance vom Text*/
+    bottom: -3px;
+    /*Zeit bis es am ende sein soll*/
+    transition: 0.3s;
+    margin-top: 100px;
+}
+
+/*a:after soll angezeigt werden nachdem gehovert wird*/
+.aktiv:hover:after {
+    width: 100%;
+}
+
+/*Für die Unterstreichung im Header zuständig*/
+.inaktiv {
+    position: relative;
+    text-decoration: none;
+    font-family: 'Perisphere';
+    color: #7c7c7c;
+    font-size: 28px;
+    letter-spacing: 2px;
+    z-index: 100;
+    padding: 0 10px;
+}
+
+.inaktiv:after {
+    /*damit nichts aufscheint und es somit unterstreicht*/
+    content: "";
+    position: absolute;
+    /*Farbe*/
+    background-color: white;
+    /*Höhe der Linie*/
+    height: 1px;
+    width: 0;
+    left: 0;
+    /*distance vom Text*/
+    bottom: -3px;
+    /*Zeit bis es am ende sein soll*/
+    transition: 0.3s;
+}
+
+.inaktiv:hover {
+    color: white;
+}
+
+/*a:after soll angezeigt werden nachdem gehovert wird*/
+.inaktiv:hover:after {
+    width: 100%;
+}
+
+.linie2 {
+    margin-left: 20px;
+    position: relative;
+}
+
+.linie2:after{
+    /*damit nichts aufscheint und es somit unterstreicht*/
+    content: "";
+    position: absolute;
+    /*Farbe*/
+    background-color: white;
+    /*Höhe der Linie*/
+    height: 1px;
+    width: 0;
+    left: 0;
+    /*distance vom Text*/
+    bottom: -6px;
+    /*Zeit bis es am ende sein soll*/
+    transition: 0.6s;
+}
+
+/*a:after soll angezeigt werden nachdem gehovert wird*/
+.linie2:hover:after {
+    width: 100%;
+}
+
+.jzbutton{
+    font-size: 25px;
+    font-family: 'Futura';
+    color: white;
+    padding: 20px 65px;
+    /*Rand*/
+    border: 1px solid white;
+    /*Runde ecken*/
+    border-radius: 4px;
+    text-decoration: none;
+    letter-spacing: 0.6px;
+    /*hintergrundfarbe durchsichtig*/
+    background-color: rgba( 0, 0, 0, 0 );
+    /*1 sekunde bis das Feld weiß ausgefüllt wird*/
+    transition: 1s;
+}
+
+.jzbutton:hover{
+    /*wenn gehovert wird soll der hintergrund inerhalb einer sekunde weiß werden und die Schriftfarbe schwarz werden*/
+    background-color: white;
+    color: black;
+}
+
+.centered{
+    text-align: center;
+}
+
+.centered2{
+    text-align: center;
+    margin-top: 300px;
+    margin-left: 20px;
+    margin-bottom: 130px;
+}
+
+.slogan{
+    color:white;
+    font-size: 120px;
+    font-family: lemon;
+}
+
+.slogklein{
+    color:white;
+    font-size: 80px;
+    font-family: lemon;
+}
+
+.layout1{
+    float: left;
+    margin-left: 200px;
+    margin-top: 75px;
+}
+
+.layout2{
+    float: right;
+    margin-right: 200px;
+    margin-top: 75px;
+}
+
+.piz1{
+    width: 500px;
+    padding-top: 100px;
+    padding-right: 100px;
+    background-image: url("../bilder/background-fotos.jpg");
+    background-size: 500px;
+    background-position-x: right;
+    background-position-y: top;
+    background-repeat: no-repeat;
+}
+.ang1{
+    width: 500px;
+    padding-top: 100px;
+    padding-right: 100px;
+    /*goldene Zahlen sind als bild im hintergrund*/
+    background-image: url("../bilder/background-fotos.jpg");
+    background-size: 500px;
+    /*hintergrund soll auf der X-Achse rechts angezeigt werden*/
+    background-position-x: right;
+    /*und auf der Y-Achse oben, somit erhält man dieses bild, denn die Produkte sind um 100 100 px verschoben*/
+    background-position-y: top;
+    /*no-repeat macht, dass das Bild, nachdem die Größe erreicht wurde kein neues Bild, ohne diesem würde es das Bild darunter und rechts für die fehlenden 100px wiederholen*/
+    background-repeat: no-repeat;
+}
+
+.überschrift{
+    text-align: center;
+    padding-top: 350px;
+    font-size: 50px;
+    font-family: 'Futura';
+}
+
+.text{
+    text-align: center;
+    padding-top: 25px;
+    font-size: 20px;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-family: 'Futura';
+    padding-bottom: 60px;
+}
+
+.rebutton{
+    font-size: 25px;
+    font-family: 'Futura';
+    color: #a07c54;
+    padding: 20px 65px;
+    border: 1px solid #a07c54;
+    border-radius: 4px;
+    text-decoration: none;
+    letter-spacing: 0.6px;
+    background-color: rgba( 0, 0, 0, 0 );
+    /*1 sekunde bis das Feld weiß ausgefüllt wird*/
+    transition: 1s;
+}
+
+.rebutton:hover{
+    background-color: #a07c54;
+    color: white;
+}
+
+.logo{
+    width: 150px;
+}
+.parallax {
+    margin-top: 800px;
+    background-image: url('../bilder/hintergrund.png');
+    /*Höhe des Abschnitts*/
+    height: 400px; 
+    /*hintergrund ist fixiert und gecentered*/
+    background-attachment: fixed;
+    background-position: center;
+    /*hintergrund wird nicht wiederholt*/
+    background-repeat: no-repeat;
+    /*Hintergrund bedeckt den gesamten Bereich*/
+    background-size: cover;
+    display: flex;
+    /*Die Items sollen nach der Mitte ausgerichtet werden*/
+    align-items: center;
+    /*Alle Items sollen den Selben Abstand haben*/
+    justify-content: space-around;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Futura';
+    color:white;
+}
+
+.anfahrt{
+    /*Höhe des Textabschnitts ab dem Parallax-Effekt*/
+    text-align: center;   
+    padding-top: 100px; 
+    padding-bottom: 200px; 
+}
+
+iframe{
+    height: 650px;
+    width: 80%;
+    border-radius: 10px;
+    border: 1px solid black
+}
+
+.text2{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 20px;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-family: 'Futura';
+}
+
+.wave{
+    width: 100%;
+    margin-bottom: -10px;
+}
+
+.impressum{
+    font-size: 25px;
+    float: left;
+    height: 250px;
+    padding-left: 25%;
+    line-height: 50px;
+    font-family: 'Futura';
+}
+
+.impressum2{
+    font-size: 25px;
+    padding-right: 25%;
+    float: right;
+    height: 250px;
+    line-height: 50px;
+    font-family: 'Futura';
+}
+
+.alles{
+    width: 100%;
+    height: 250px;
+    background-size: 100%;
+    background-color: #B6B6B6; 
+}
+
+.mail{
+    color: black;
+}
+
+.bildimp{
+    width: 400px;
+    margin-left: 110px;
+}
+
+
+
+.menu{
+    margin-top: 15px;
+    width: 100%;
+}
+
+.foto{
+    width: 350px;
+    transition: transform .2s;
+}
+
+.foto:hover{
+    transform: scale(1.1);
+}
+
+.untertitel{
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Futura';
+    line-height: 50px;
+}
+
+.letter{
+    letter-spacing: 3px;  
+}
+
+.noborder{
+    border-bottom: 0px;
+}
+
+th,td {
+    padding-bottom: 50px;
+    padding-top: 50px;
+    border-bottom: 1px solid #a07c54;
+}
+.überschriftweiß{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 50px;
+    font-family: 'Futura';
+}
+
+
+
+form{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    justify-content: space-around;
+}
+
+.textbox{
+    text-align: center;
+    margin-right: 40px;
+    padding-right: 50px;;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: 'Futura';
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 2px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+input[type=checkbox]{
+    border-radius: 2px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.check{
+    font-family: 'Futura';
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 150px;
+}
+
+.anz{
+    font-family: 'Futura';
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.überschriftpiz{
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 50px;
+    font-family: 'Futura';
+}
+
+.anzahl{
+    text-align: center;
+    margin-right: 40px;
+    padding-right: 25px;;
+    padding-left: 25px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: 'Futura';
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 2px;
+    letter-spacing: 2px;
+}
+.right{
+    float: right;
+    margin-right: 525px;
+}
+
+.centro{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.box{
+    margin-left:625px;
+}
+
+.textbox2{
+    text-align: center;
+    padding-right: 75px;
+    padding-left: 75px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 100px;
+    font-family: 'Futura';
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 2px;
+    letter-spacing: 2px;
+    margin-bottom: 100px;
+}
+
+.text3{
+    font-size: 20px;
+    padding-left: 20px;
+    font-family: 'Futura';
+}
+
+input[type=radio]{
+    margin-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+
+
+.datum{
+    text-align: center;
+    margin-right: 40px;
+    padding-right: 41px;;
+    padding-left: 41px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: 'Futura';
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 2px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.uhr{
+    text-align: center;
+    margin-right: 40px;
+    padding-right: 94px;;
+    padding-left: 95px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: 'Futura';
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 2px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.extra{
+    text-align: center;
+    padding-right: 75px;
+    padding-left: 75px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 25px;
+    font-family: 'Futura';
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 2px;
+    letter-spacing: 2px;
+    margin-bottom: 100px;
+}
+
+.select{
+    margin-right: 40px;
+    padding-right: 94px;;
+    padding-left: 95px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: 'Futura';
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 2px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}

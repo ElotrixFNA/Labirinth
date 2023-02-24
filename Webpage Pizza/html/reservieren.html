@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="icon" type="image/x-icon" href="../bilder/Favicon.png">
+    <meta name="viewport" content="width = device-width,  initial-scale=1.0" charset="UTF-8" />
+    <title>La Fenice</title>
+</head>
+
+<body>
+
+    <nav>
+
+        <img class="logo" src="../bilder/logo.png">
+        <span class="linie2"><a href="../index.html" class="inaktiv">Homepage</a></span>
+        <span class="linie2"><a href="./menu.html" class="inaktiv">Menù</a></span>
+        <span class="linie2"><a href="./reservieren.html" class="aktiv">Reservieren</a></span>
+        <span class="linie2"><a href="./bestellen.html" class="inaktiv">Online Bestellen</a></span>
+
+    </nav>
+
+    <div class="centered2"><span class="slogklein">Online </span><span class="slogan">reservieren </span>></div>
+
+
+    <div class="centered"><a href="./menu.html" class="jzbutton">Unser Menù</a></div>
+
+
+    <div class="überschrift">Reservieren Sie jetzt Ihren tisch</div>
+    <div class="text">
+        Unsere Tische sind sowohl auf der Terasse, als auch im Innenraum reservierbar. 
+    </div>
+
+        <form>
+            <div class="centro">
+                <input class="textbox" type="text" placeholder="Nachname" required>
+                <input class="textbox" type="text" placeholder="Vorname" required> <br>
+            
+                <input class="textbox" type="tel" placeholder="Telefon: 1234567890" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                <input id="personen" class="textbox" type="number" placeholder="Personenanzahl" required><br>
+
+                <input id="datum" class="datum" type="date" required>
+                <input id="zeit" class="uhr" type="time" placeholder="Uhrzeit" required><br>
+                
+                <input type="radio" name="location" value ="terasse">
+                <label class="text3">Terasse</label><br>
+                <input type="radio" name="location" value="terasse">
+                <label class="text3">Innen<label><br>
+            </div>
+
+            <div class="centered">
+
+                <input class="extra" type="text" placeholder="Extra Wünsche"><br>
+                <input type="submit" class ="rebutton" onclick="myFunction()">
+            </div>
+
+        </form>
+
+        
+        <script>
+            function myFunction() {
+                var datum = document.getElementById("datum");
+                var personen = document.getElementById("personen");
+                var zeit = document.getElementById("zeit");
+
+                alert("Danke für Ihre Reservierung. Ihr Tisch wurde am " + datum.value + " für " +personen.value + " Personen, um " + zeit.value +  " Uhr reserviert.");
+            }
+            </script>
+
+    <img src="../bilder/waves.png" class="wave">
+    <div class="alles">
+        <div class="impressum">
+            
+            Felix Erb <br>
+            4B <br>
+            WFO Meran <br>
+            <a class="mail" href="mailto:erb.felix2004@gmail.com">E-Mail</a><br>
+        
+        </div>
+
+        <img src="../bilder/logo.png" class="bildimp">
+
+        <div class="impressum2">
+            
+            La Fenice <br>
+            GmbH / S.r.l.<br>
+            Rennweg, 3<br>
+            39012 Meran<br>
+
+        </div>
+    </div>
+</body>
+
+</html>

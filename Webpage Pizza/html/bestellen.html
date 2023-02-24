@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="icon" type="image/x-icon" href="../bilder/Favicon.png">
+    <meta name="viewport" content="width = device-width,  initial-scale=1.0" charset="UTF-8" />
+    <title>La Fenice</title>
+</head>
+
+<body>
+
+    <nav>
+
+        <img class="logo" src="../bilder/logo.png">
+        <span class="linie2"><a href="../index.html" class="inaktiv">Homepage</a></span>
+        <span class="linie2"><a href="./menu.html" class="inaktiv">Menù</a></span>
+        <span class="linie2"><a href="./reservieren.html" class="inaktiv">Reservieren</a></span>
+        <span class="linie2"><a href="./bestellen.html" class="aktiv">Online Bestellen</a></span>
+
+    </nav>
+
+    <div class="centered2"><span class="slogklein">Online </span><span class="slogan">Bestellen </span>></div>
+
+
+    <div class="centered"><a href="./menu.html" class="jzbutton">Unser Menù</a></div>
+
+
+    <div class="überschrift">Bestellen Sie jetzt Online!</div>
+    <div class="text">
+        Von 17:30 bis 23:30 können Sie jeden Tag unsere Pizzen abholen oder ganz gemütlich auf Ihre Couch geliefert bekommen.
+    </div>
+
+        <form>
+            <div class="centro">
+                <input class="textbox" type="text" placeholder="Nachname" required>
+                <input class="textbox" type="text" placeholder="Vorname" required> <br>
+            
+                <input class="textbox" type="tel" placeholder="Telefon: 1234567890" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                <input class="textbox" type="text" placeholder="Adresse" required> <br>
+
+                <select name="stadt" class="select">
+                    <option value="meran">Meran</option>
+                    <option value="algund">Algund</option>
+                    <option value="lana">Lana</option>
+                    <option value="marling">Marling</option>
+                  </select>
+                <input class="textbox" type="Number" placeholder="PLZ" required> <br>
+
+                <input type="radio" name="bestell" required>
+                <label class="text3">In der Pizzeria abholen</label><br>
+                <input type="radio" name="bestell" required>
+                <label class="text3">Nach Hause Liefern lassen</label><br>
+            </div>
+
+            <div class="überschriftpiz">Pizzen</div>
+
+            <input class="box" type="checkbox" id="marinara" value="5.50"> <span class="check">Marinara</span> 
+                <span class="right"><span class="anz">Anzahl: </span><input id ="anzmarinara"class="anzahl" type="text" placeholder="Anzahl der Pizzen"></span><br>
+
+            <input class="box" type="checkbox" id="napoletana" value="5.00"> <span class="check">Napoletana</span> 
+                <span class="right"><span class="anz">Anzahl: </span><input id ="anznapoletana" class="anzahl" type="text" placeholder="Anzahl der Pizzen"></span><br>
+
+            <input class="box" type="checkbox" id="margherita" value="6.50"> <span class="check">Margherita</span> 
+                <span class="right"><span class="anz">Anzahl: </span><input id ="anzmargherita" class="anzahl" type="text" placeholder="Anzahl der Pizzen"></span><br>
+
+
+            <input class="box" type="checkbox" id="bufalina" value="9.50"> <span class="check">Bufalina</span> 
+                <span class="right"><span class="anz">Anzahl: </span><input id ="anzbufalina" class="anzahl" type="text" placeholder="Anzahl der Pizzen"></span><br>
+
+
+            <input class="box" type="checkbox" id="diavola" value="9.50"> <span class="check">Diavola</span> 
+                <span class="right"><span class="anz">Anzahl: </span><input id ="anzdiavola" class="anzahl" type="text" placeholder="Anzahl der Pizzen"></span><br>
+
+            <input class="box" type="checkbox" id="capricciosa" value="8.50"> <span class="check">Capricciosa</span> 
+                <span class="right"><span class="anz">Anzahl: </span><input id ="anzcapricciosa" class="anzahl" type="text" placeholder="Anzahl der Pizzen"></span><br>
+
+
+            <input class="box" type="checkbox" id="siciliana" value="9.50"> <span class="check">Siciliana</span> 
+                <span class="right"><span class="anz">Anzahl: </span><input id ="anzsiciliana" class="anzahl" type="text" placeholder="Anzahl der Pizzen"></span><br>
+
+            <input class="box" type="checkbox" id="contadina" value="10.00"> <span class="check">Contadina</span> 
+                <span class="right"><span class="anz">Anzahl: </span><input id ="anzcontadina" class="anzahl" type="text" placeholder="Anzahl der Pizzen"></span><br>
+
+            <input class="box" type="checkbox" id="ortolana" value="9.50"> <span class="check">Ortolana</span> 
+                <span class="right"><span class="anz">Anzahl: </span><input id ="anzortolana" class="anzahl" type="text" placeholder="Anzahl der Pizzen"></span><br>
+
+
+            <input class="box" type="checkbox" id="ricottina" value="9.00"> <span class="check">Ricottina</span> 
+                <span class="right"><span class="anz">Anzahl: </span><input id ="anzricottina" class="anzahl" type="text" placeholder="Anzahl der Pizzen"></span><br>
+
+            <input class="box" type="checkbox" id="brie" value="9.50"> <span class="check">Brie</span> 
+                <span class="right"><span class="anz">Anzahl: </span><input id ="anzbrie" class="anzahl" type="text" placeholder="Anzahl der Pizzen"></span><br>
+
+            <input class="box" type="checkbox" id="funghi" value="9.00"> <span class="check">Funghi e cotto</span> 
+                <span class="right"><span class="anz">Anzahl: </span><input id ="anzfunghi" class="anzahl" type="text" placeholder="Anzahl der Pizzen"></span><br>
+
+
+            <input class="box" type="checkbox" id="käse" value="9.50"> <span class="check">4 Käse</span> 
+                <span class="right"><span class="anz">Anzahl: </span><input id ="anzkäse" class="anzahl" type="text" placeholder="Anzahl der Pizzen"></span><br>
+
+            <input class="box" type="checkbox" id="tricolore" value="9.00"> <span class="check">Tricolore</span> 
+                <span class="right"><span class="anz">Anzahl: </span><input id ="anztricolore" class="anzahl" type="text" placeholder="Anzahl der Pizzen"></span><br>
+
+            <input class="box" type="checkbox" id="radicchio" value="9.00"> <span class="check">Radicchio</span> 
+                <span class="right"><span class="anz">Anzahl: </span><input id ="anzradicchio" class="anzahl" type="text" placeholder="Anzahl der Pizzen"></span><br>
+        
+            <div class="centered">
+
+                <input class="textbox2" type="text" placeholder="Extra Wünsche"><br>
+                <input type="submit" class ="rebutton" onclick="myFunction()">
+            </div>
+        </form>
+
+        
+        <script>
+            
+
+            function myFunction() { 
+                
+                //zu Beginn alle Variablen erstellen und ihnen den Wert 0 zuweisen
+                //sollten sie in den checkboxen dann nicht ausgewählt werden, haben sie immernoch den Wert 0, wichtig für die Addition am Ende
+                var marinara = 0;
+                var napoletana = 0;
+                var margherita = 0;
+                var bufalina = 0;
+                var diavola = 0;
+                var capricciosa = 0;
+                var siciliana = 0;
+                var contadina = 0;
+                var ortolana = 0;
+                var ricottina = 0;
+                var brie = 0;
+                var funghi = 0;
+                var käse = 0;
+                var tricolore = 0;
+                var radicchio = 0;
+
+
+                //"document.getElementById" wählt ein Element im HTML code aus, welches die jeweilige ID hat z.B. marinara. Diese Id findet man auch oben bei der <input>-Zeile und diese beiden müssen übereinstimmen
+                //".checked" checkt ob dieses Kästchen angekreuzt wurde
+                //"If" ist eine Abfrage und bedeutet so viel wie "wenn"; also wenn die Checkbox mit der ID "marinara" gecheckt wurde 
+                //"&&" steht dafür, dass beide zutreffen müssen
+                //und "anzmarinara", also das Element, welches ausgiebt wie viele dieser Pizzen bestellt werden müssen, nicht 0(!= 0) ist, kommt man in die Zeile 146
+                //".value" bedeutet der Wert der in das Textfeld eingegeben wird, wird ausgelesen
+                if(document.getElementById("marinara").checked && document.getElementById("anzmarinara").value != 0){
+                    //hier wird in der variable Margherita der Wert der Multiplikation des Preises und der Anzahl abgespeichert
+                    //value wird in der <input>-zeile festgelegt und ".value" lest diesen Wert aus der ID aus
+                    //parseFloat macht aus einem Element Zahlen, also aus dem value 5.50 wird die Zahl 5.5
+                    //dieser value wird dann mit dem value der eingegebenen Zahl aus dem Element anzmarinara multipliziert
+                    marinara = parseFloat(document.getElementById("marinara").value) * parseFloat(document.getElementById("anzmarinara").value);
+                }   
+                //wenn jedoch das Kästchen Marinara gecheckt wurde und die Anzahl der Pizzen nicht eingegeben wurde also 0 ist, soll eine bestellt werden anstatt keiner
+                if(document.getElementById("marinara").checked && document.getElementById("anzmarinara").value == 0){
+                   marinara = parseFloat(document.getElementById("marinara").value);
+                }
+
+
+                if(document.getElementById("napoletana").checked && document.getElementById("anznapoletana").value != 0){
+                    napoletana = parseFloat(document.getElementById("napoletana").value) * parseFloat(document.getElementById("anznapoletana").value);
+                }   
+                if((document.getElementById("napoletana").checked && document.getElementById("anznapoletana").value == 0)){
+                   napoletana = parseFloat(document.getElementById("napoletana").value);
+                }
+
+
+                if(document.getElementById("margherita").checked && document.getElementById("anzmargherita").value != 0){
+                    margherita = parseFloat(document.getElementById("margherita").value) * parseFloat(document.getElementById("anzmargherita").value);
+                }   
+                if(document.getElementById("margherita").checked && document.getElementById("anzmargherita").value == 0){
+                   margherita = parseFloat(document.getElementById("margherita").value);
+                }
+
+
+                if(document.getElementById("bufalina").checked && document.getElementById("anzbufalina").value != 0){
+                    bufalina = parseFloat(document.getElementById("bufalina").value) * parseFloat(document.getElementById("anzbufalina").value);
+                }   
+                if(document.getElementById("bufalina").checked && document.getElementById("anzbufalina").value == 0){
+                   bufalina = parseFloat(document.getElementById("bufalina").value);
+                }
+
+
+                if(document.getElementById("diavola").checked && document.getElementById("anzdiavola").value != 0){
+                    diavola = parseFloat(document.getElementById("diavola").value) * parseFloat(document.getElementById("anzdiavola").value);
+                }   
+                if(document.getElementById("diavola").checked && document.getElementById("anzdiavola").value == 0){
+                    diavola = parseFloat(document.getElementById("diavola").value);
+                }
+                
+
+                if(document.getElementById("capricciosa").checked && document.getElementById("anzcapricciosa").value != 0){
+                    capricciosa = parseFloat(document.getElementById("capricciosa").value) * parseFloat(document.getElementById("anzcapricciosa").value);
+                }   
+                if(document.getElementById("capricciosa").checked && document.getElementById("anzcapricciosa").value == 0){
+                    capricciosa = parseFloat(document.getElementById("capricciosa").value);
+                }
+                                
+
+                if(document.getElementById("siciliana").checked && document.getElementById("anzsiciliana").value != 0){
+                    siciliana = parseFloat(document.getElementById("siciliana").value) * parseFloat(document.getElementById("anzsiciliana").value);
+                }   
+                if(document.getElementById("siciliana").checked && document.getElementById("anzsiciliana").value == 0){
+                    siciliana = parseFloat(document.getElementById("siciliana").value);
+                }
+                                
+
+                if(document.getElementById("contadina").checked && document.getElementById("anzcontadina").value != 0){
+                    contadina = parseFloat(document.getElementById("contadina").value) * parseFloat(document.getElementById("anzcontadina").value);
+                }   
+                if(document.getElementById("contadina").checked && document.getElementById("anzcontadina").value == 0){
+                    contadina = parseFloat(document.getElementById("contadina").value);
+                }
+                                
+
+                if(document.getElementById("ortolana").checked && document.getElementById("anzortolana").value != 0){
+                    ortolana = parseFloat(document.getElementById("ortolana").value) * parseFloat(document.getElementById("anzortolana").value);
+                }   
+                if(document.getElementById("ortolana").checked && document.getElementById("anzortolana").value == 0){
+                    ortolana = parseFloat(document.getElementById("ortolana").value);
+                }
+                                
+
+                if(document.getElementById("ricottina").checked && document.getElementById("anzricottina").value != 0){
+                    ricottina = parseFloat(document.getElementById("ricottina").value) * parseFloat(document.getElementById("anzricottina").value);
+                }   
+                if(document.getElementById("ricottina").checked && document.getElementById("anzricottina").value == 0){
+                    ricottina = parseFloat(document.getElementById("ricottina").value);
+                }
+                              
+
+                if(document.getElementById("brie").checked && document.getElementById("anzbrie").value != 0){
+                    brie = parseFloat(document.getElementById("brie").value) * parseFloat(document.getElementById("anzbrie").value);
+                }   
+                if(document.getElementById("brie").checked && document.getElementById("anzbrie").value == 0){
+                    brie = parseFloat(document.getElementById("brie").value);
+                }
+                              
+
+                if(document.getElementById("funghi").checked && document.getElementById("anzfunghi").value != 0){
+                    funghi = parseFloat(document.getElementById("funghi").value) * parseFloat(document.getElementById("anzfunghi").value);
+                }   
+                if(document.getElementById("funghi").checked && document.getElementById("anzfunghi").value == 0){
+                    funghi = parseFloat(document.getElementById("funghi").value);
+                }
+                              
+
+                if(document.getElementById("käse").checked && document.getElementById("anzkäse").value != 0){
+                    käse = parseFloat(document.getElementById("käse").value) * parseFloat(document.getElementById("anzkäse").value);
+                }   
+                if(document.getElementById("käse").checked && document.getElementById("anzkäse").value == 0){
+                    käse = parseFloat(document.getElementById("käse").value);
+                }
+                              
+
+                if(document.getElementById("tricolore").checked && document.getElementById("anztricolore").value != 0){
+                    tricolore = parseFloat(document.getElementById("tricolore").value) * parseFloat(document.getElementById("anztricolore").value);
+                }   
+                if(document.getElementById("tricolore").checked && document.getElementById("anztricolore").value == 0){
+                    tricolore = parseFloat(document.getElementById("tricolore").value);
+                }
+                              
+
+                if(document.getElementById("radicchio").checked && document.getElementById("anzradicchio").value != 0){
+                    radicchio = parseFloat(document.getElementById("radicchio").value) * parseFloat(document.getElementById("anzradicchio").value);
+                }   
+                if(document.getElementById("radicchio").checked && document.getElementById("anzradicchio").value == 0){
+                    radicchio = parseFloat(document.getElementById("radicchio").value);
+                }
+
+                //Addition aller Variablen
+                var zsm = (marinara + napoletana + margherita + bufalina + diavola + capricciosa + siciliana + contadina + ortolana + ricottina + brie + funghi + käse + tricolore + radicchio);
+                
+                //Ausgabe des Wertes durch einen alert (Pop-up Fenster oben)
+                alert("Danke für Ihre Bestellung in der Höhe von " + zsm + " €. Wir werden Ihnen Mitteilen sobald das Essen Bereit ist.");
+        
+            }
+            </script>
+
+    <img src="../bilder/waves.png" class="wave">
+    <div class="alles">
+        <div class="impressum">
+            
+            Felix Erb <br>
+            4B <br>
+            WFO Meran <br>
+            <a class="mail" href="mailto:erb.felix2004@gmail.com">E-Mail</a><br>
+        
+        </div>
+
+        <img src="../bilder/logo.png" class="bildimp">
+
+        <div class="impressum2">
+            
+            La Fenice <br>
+            GmbH / S.r.l.<br>
+            Rennweg, 3<br>
+            39012 Meran<br>
+
+        </div>
+    </div>
+</body>
+
+</html>
