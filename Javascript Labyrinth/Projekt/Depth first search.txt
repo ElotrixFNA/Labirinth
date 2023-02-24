@@ -1,0 +1,10 @@
+Depth first search:
+Nur einen Pfad nehmen d.h. wenn ein Pfad sich in 2 trennt nimmt man nur einen nicht beide aufeinmal bis man auf eine Sackgasse stoßt -> dann nimmt man den anderen Weg etc etc
+
+Schritte:
+1. Start bei einer Zelle
+2.Die jetztige Zelle as besucht markieren
+3.Solange die Zelle nicht besuchte nebenzellen hat:
+	a. EINE Nebenzelle besuchen
+	b. Die Wand zwischen den Zellen entfernen
+	c. Dies Weiter durchführen

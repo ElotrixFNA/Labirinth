@@ -1,0 +1,194 @@
+body {
+	background-image: url("../../bilder/hintergrund2.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.maze {
+	position: absolute;
+	display: inline;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border: 2px solid black;
+}
+
+h1 {
+	text-align: center;
+	font-family: Showcard Gothic;
+	letter-spacing: 3px;
+}
+
+.anzeige1 {
+	display: none;
+	font-family: Showcard Gothic;
+	letter-spacing: 0.1em;
+	font-size: 50px;
+}
+
+.anzeige {
+	font-family: Showcard Gothic;
+	letter-spacing: 0.1em;
+	font-size: 50px;
+}
+
+.fertig {
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 50%;
+	height: 30%;
+	background: #000000;
+	z-index: 4;
+	padding: 10px;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 0px 0px 20px 5px;
+	color: white;
+}
+
+#submit {
+	background-color: rgb(255, 228, 1);
+	border: 1px solid #ffffff;
+	border-radius: 10px;
+	cursor: pointer;
+	color: black;
+	font-family: Showcard Gothic;
+	letter-spacing: 3px;
+	font-size: 20px;
+	padding: 10px;
+	width: 375px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+#submit:hover {
+	opacity: 50%;
+}
+
+.title {
+	color: white;
+	font-family: Showcard Gothic;
+	font-size: 40px;
+	margin-top: -4%;
+	padding-bottom: 5px;
+	letter-spacing: 3px;
+}
+
+.header {
+	color: white;
+	margin-top: 5.5%;
+	font-family: Showcard Gothic;
+	font-size: 40px;
+	padding-bottom: 10px;
+	letter-spacing: 3px;
+}
+
+#timer2 {
+	color: white;
+	font-family: Showcard Gothic;
+	font-size: 20px;
+	margin-top: -2%;
+	font-size: 25px;
+}
+
+#timer {
+	display: none;
+	font-family: Showcard Gothic;
+	background-color: rgb(255, 228, 1);
+	font-size: 35px;
+	float: left;
+	padding: 10px;
+	border-radius: 5px;
+	margin-left: 10%;
+	letter-spacing: 3px;
+	border: solid 2px;
+}
+
+.beginn {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 50%;
+	height: 30%;
+	background: #000000;
+	z-index: 4;
+	padding: 10px;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 0px 0px 100px 40px rgb(255, 228, 1);
+	color: white;
+}
+
+#submit2 {
+	background-color: rgb(255, 228, 1);
+	border: 1px solid #ffffff;
+	border-radius: 10px;
+	cursor: pointer;
+	color: black;
+	font-family: Showcard Gothic;
+	letter-spacing: 3px;
+	font-size: 20px;
+	padding: 5px;
+	width: 250px;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-top: 15px;
+}
+
+#submit2:hover {
+	opacity: 50%;
+}
+
+#text {
+	float: right;
+	display: none;
+	margin-top: 1%;
+	padding-right: 3%;
+	height: 500px;
+	width: auto;
+}
+
+.kalt {
+	color: white;
+	font-family: Showcard Gothic;
+	font-size: 20px;
+	letter-spacing: 3px;
+	padding-bottom: 40px;
+	display: none;
+	text-align: center;
+}
+
+.perfekt {
+	color: white;
+	font-family: Showcard Gothic;
+	font-size: 20px;
+	letter-spacing: 3px;
+	padding-bottom: 40px;
+	display: none;
+	text-align: center;
+}
+
+.warm {
+	color: white;
+	font-family: Showcard Gothic;
+	font-size: 20px;
+	letter-spacing: 3px;
+	padding-bottom: 40px;
+	display: none;
+	text-align: center;
+}
+
+.warm1 {
+	color: white;
+	font-family: Showcard Gothic;
+	font-size: 20px;
+	letter-spacing: 3px;
+	padding-bottom: 40px;
+	display: none;
+	text-align: center;
+}

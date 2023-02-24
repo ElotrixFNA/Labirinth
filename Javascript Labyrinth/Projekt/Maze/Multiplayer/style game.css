@@ -1,0 +1,51 @@
+html, body {
+    background-color: beige;
+	height: 100%;
+}
+
+ h1{
+   text-align: center;
+   margin-top: 60px;
+   font-family:  Showcard Gothic;
+   font-size: 40px;
+   letter-spacing: 3px;
+ }
+
+
+
+#links {
+	float: left;
+	width: 45%;
+	border-right: solid;
+	height: 100%;
+	/* box-sizing: border-box; */
+}
+
+#mitte {
+	width: 10%;
+	height: 100%;
+	background-color: black;
+	color: rgb(255,228,1);
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 10px;
+	font-size: 30px;
+	font-family:  Showcard Gothic;
+	/* box-sizing: border-box; */
+}
+
+#rechts {
+	float: right;
+	width: 45%;
+	border-left: solid;
+	height: 100%;
+	/* box-sizing: border-box; */
+}
+
+#timer{
+  font-family: Showcard Gothic;
+  background-color: rgba(36, 36, 34, 0.404);
+  font-size: 35px;
+  border-radius: 5px;
+  letter-spacing: 3px;
+  border: solid 2px;

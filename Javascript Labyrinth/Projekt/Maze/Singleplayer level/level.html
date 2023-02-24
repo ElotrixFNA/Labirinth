@@ -1,0 +1,42 @@
+  <!DOCTYPE html>
+  <html>
+   <head>
+      <meta charset="UTF-8" />
+      <link rel="icon" type="image/x-icon" href="../../bilder/Favicon.png">
+      <meta name = "viewport" content = "width = device-width,  initial-scale=1.0" />
+      <link rel="stylesheet" href="levels.css" >
+      <title>Finde den Schlüssel</title>
+   </head>
+   <body>
+      <audio id="myAudio">
+         <source src="../../bilder/Music.mp3" type="audio/mp3">
+      </audio>
+      <h1 class = "anzeige" >Finde den Schlüssel!</h1>
+      <div id="lvlanzeigen">Level: 1</div>
+      <div id="result"></div>
+      <img id ="pic" src="../../bilder/schlussl.png"/>
+      <div id="timer"></div>
+      <div class="fertig">
+         <div class="title">
+            <h3>Geschafft!</h3>
+         </div>
+         <div id="timer2"></div>
+         <br>
+         <button  id="submit" onclick ="wieder()">Nächstes Level</button>
+         <button id="submit" onclick="zuruck()">Zurück zum Hauptmenü</button>
+      </div>
+      <div class="geschafft">
+         <div class="title">
+            <h3>Du hast es Geschafft!!</h3>
+         </div>
+         <div id="timer2"></div>
+         <br>
+         <button  id="geschafftbutt" onclick ="neulvl()">Nocheinmal spielen</button>
+         <button id="geschafftbutt" onclick="zuruck()">Zurück zum Hauptmenü</button>
+      </div>
+      <div class="canvas>">
+         <canvas class="maze"></canvas>
+      </div>
+      <script src ="Maze.js"></script>
+   </body>
+</html>

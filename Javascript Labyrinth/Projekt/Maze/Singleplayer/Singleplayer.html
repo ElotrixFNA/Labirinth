@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8" />
+      <link rel="icon" type="image/x-icon" href="../../bilder/Favicon.png">
+      <meta name = "viewport" content = "width = device-width,  initial-scale=1.0" />
+      <link rel="stylesheet" href="singleplayer.css" >
+      <title>Bring Homer zu seinem Bier</title>
+   </head>
+   <body>
+      <div class="beginn">
+         <div class = "header">
+            <h3>Suche deine Schwierigkeit aus</h3>
+         </div>
+         <button class="einfach" id="submit2" onclick="start(600, 10)">Einfach</button>
+         <button class="einfach" id="submit2" onclick="start(650, 15)">Mittel</button>
+         <button class="einfach" id="submit2" onclick="start(700, 20)">Schwer</button>
+         <button class="einfach" id="submit2" onclick="zuruck()">Zurück</button>
+      </div>
+      <audio id="myAudio">
+         <source src="../../bilder/Music.mp3" type="audio/mp3">
+      </audio>
+      <h1 class="anzeige1">Warte wo sind die Kinder?</h1>
+      <h1 class = "anzeige" >Hilf Homer zu seinem Bier!</h1>
+      <div id="timer"></div>
+      <div class="fertig">
+         <div class="title">
+            <h3>Geschafft!</h3>
+         </div>
+         <div id="timer2"></div>
+         <br>
+         <div class ="kalt">Mhh lecker, das Bier war noch kalt</div>
+         <div class ="perfekt">Gut gemacht, das Bier war noch kühl</div>
+         <div class ="warm1">das Bier ist leicht warm geworden</div>
+         <div class ="warm">Welch ein Graus, das Bier ist warm</div>
+         <button class="erneut" id="submit">Erneut Spielen</button>
+         <button id="submit" onclick="zuruck()">Zurück zum Hauptmenü</button>
+      </div>
+      <div id="text">
+         <img src="../../bilder/marge.png" />
+      </div>
+      <div class="canvas>">
+         <canvas class="maze"></canvas>
+      </div>
+      <script src ="maze.js"></script>
+   </body>
+</html>

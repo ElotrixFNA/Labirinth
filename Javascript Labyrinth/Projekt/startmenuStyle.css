@@ -1,0 +1,130 @@
+body {
+	background-image: url("bilder/hintergrund.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+h1 {
+	font-size: 130;
+	margin-top: 6%;
+	font-family: Showcard Gothic;
+	letter-spacing: 0.3em;
+	text-align: center;
+}
+
+h2 {
+	font-size: 90;
+	padding-top: 2%;
+	font-family: Showcard Gothic;
+	letter-spacing: 0.3em;
+	text-align: center;
+	color: rgb(55, 137, 35);
+}
+
+h3 {
+	font-size: 40;
+	font-family: Showcard Gothic;
+	text-align: center;
+	color: rgb(255, 228, 1);
+	letter-spacing: 0.1em;
+}
+
+.buttons button {
+	background-color: rgb(255, 228, 1);
+	width: 320px;
+	height: 110px;
+	font-size: 40;
+	margin: 2% 1% 1% 2%;
+	border: solid;
+	font-family: Showcard Gothic;
+	border-radius: 30px;
+	margin-right: 150px;
+	cursor: pointer;
+}
+
+.buttons {
+	width: 80%;
+	text-align: center;
+}
+
+.buttons button:hover {
+	opacity: 70%;
+}
+
+#gif {
+	float: right;
+	margin-top: -350px;
+	margin-right: 110px;
+	width: 550px;
+	height: 420px;
+}
+
+#text {
+	font-size: 30;
+	font-family: Showcard Gothic;
+	text-align: center;
+	color: white;
+	margin-top: -20px;
+}
+
+#mitte {
+	background-color: rgba(0, 0, 0, 0.7);
+	height: 100%;
+	width: 60%;
+	margin: 0 auto;
+	box-shadow: 0px 0px 30px black;
+}
+
+#links {
+	height: 100%;
+	width: 20%;
+	float: left;
+}
+
+#rechts {
+	height: 100%;
+	width: 20%;
+	float: right;
+}
+
+#zurueck {
+	background-color: rgb(255, 228, 1);
+	width: 190px;
+	height: 50px;
+	font-size: 30;
+	border: solid;
+	font-family: Showcard Gothic;
+	border-radius: 30px;
+	margin-left: 25%;
+	position: absolute;
+	text-decoration: none;
+	margin-top: 8%;
+	cursor: pointer;
+}
+
+#zurueck:hover {
+	opacity: 50%;
+}
+
+#tasten {
+	font-size: 30;
+	color: white;
+	font-family: Helvetica;
+	position: absolute;
+	margin-left: -10%;
+	margin-top: 15px;
+}
+
+#pfeile {
+	position: absolute;
+	margin-left: 90px;
+}
+
+.header {
+	color: white;
+	margin-top: 5.5%;
+	font-family: Showcard Gothic;
+	font-size: 40px;
+	padding-bottom: 40px;
+	letter-spacing: 3px;
+}
